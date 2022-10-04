@@ -1,0 +1,77 @@
+{
+    "name": "Flux Resource Graph",
+    "children": [
+        {
+            "name": "node",
+            "type": "node",
+            "value": 1,
+            "children": [
+                {
+                    "name": "default",
+                    "type": "slot",
+                    "value": 1,
+                    "children": [
+                        {
+                            "name": "socket",
+                            "type": "socket",
+                            "value": 2,
+                            "children": [
+                                {
+                                    "name": "core",
+                                    "type": "core",
+                                    "value": 5
+                                },
+                                {
+                                    "name": "gpu",
+                                    "type": "gpu",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "memory",
+                                    "type": "memory",
+                                    "value": 6
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "node",
+            "type": "node",
+            "value": 1,
+            "children": [
+                {
+                    "name": "default",
+                    "type": "slot",
+                    "value": 1,
+                    "children": [
+                        {
+                            "name": "socket",
+                            "type": "socket",
+                            "value": 2,
+                            "children": [
+                                {
+                                    "name": "core",
+                                    "type": "core",
+                                    "value": 5
+                                },
+                                {
+                                    "name": "gpu",
+                                    "type": "gpu",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "memory",
+                                    "type": "memory",
+                                    "value": 6
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

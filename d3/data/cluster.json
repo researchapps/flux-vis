@@ -1,0 +1,86 @@
+{
+    "name": "Flux Resource Graph",
+    "children": [
+        {
+            "name": "cluster",
+            "type": "cluster",
+            "value": 1,
+            "children": [
+                {
+                    "name": "rack",
+                    "type": "rack",
+                    "value": 1,
+                    "children": [
+                        {
+                            "name": "gpunode",
+                            "type": "slot",
+                            "value": 2,
+                            "children": [
+                                {
+                                    "name": "node",
+                                    "type": "node",
+                                    "value": 1,
+                                    "children": [
+                                        {
+                                            "name": "socket",
+                                            "type": "socket",
+                                            "value": 2,
+                                            "children": [
+                                                {
+                                                    "name": "core",
+                                                    "type": "core",
+                                                    "value": 18
+                                                },
+                                                {
+                                                    "name": "gpu",
+                                                    "type": "gpu",
+                                                    "value": 1
+                                                },
+                                                {
+                                                    "name": "memory",
+                                                    "type": "memory",
+                                                    "value": 32
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "bb",
+                                            "type": "bb",
+                                            "value": 768
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "node",
+                                    "type": "node",
+                                    "value": 1,
+                                    "children": [
+                                        {
+                                            "name": "bicore",
+                                            "type": "slot",
+                                            "value": 2,
+                                            "children": [
+                                                {
+                                                    "name": "socket",
+                                                    "type": "socket",
+                                                    "value": 1,
+                                                    "children": [
+                                                        {
+                                                            "name": "core",
+                                                            "type": "core",
+                                                            "value": 2
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
