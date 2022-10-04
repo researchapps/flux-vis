@@ -1,0 +1,42 @@
+version: 9999
+resources:
+  - type: cluster
+    count: 1
+    with:
+      - type: rack
+        count: 1
+        with:
+          - type: slot
+            count: 2
+            label: gpunode
+            with:
+              - type: node
+                count: 1
+                with:
+                  - type: socket
+                    count: 2
+                    with:
+                      - type: core
+                        count: 18
+                      - type: gpu
+                        count: 1
+                      - type: memory
+                        count: 32
+                  - type: bb
+                    count: 768
+
+      - type: birack
+        count: 1
+        with:
+          - type: slot
+            count: 2
+            label: bicorenode
+            with:
+              - type: node
+                count: 1
+                with:
+                  - type: socket
+                    count: 2
+                    with:
+                      - type: core
+                        count: 2
